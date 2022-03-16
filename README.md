@@ -1,3 +1,3 @@
 # reach-ga
 
-Demo react for google analytics implementation
+Demo react app for google analytics implementation
