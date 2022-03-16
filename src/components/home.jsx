@@ -2,7 +2,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
 import ReactGA from "react-ga";
-ReactGA.initialize("G-Y2EZBTX5GL", { debug: true });
+ReactGA.initialize("UA-223069772-1", { debug: true });
 
 const Home = () => {
   function handleClickTest1(label) {

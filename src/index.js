@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
 import ReactGA from 'react-ga';
-ReactGA.initialize('G-Y2EZBTX5GL', { debug: true });
+ReactGA.initialize('UA-223069772-1', { debug: true });
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
