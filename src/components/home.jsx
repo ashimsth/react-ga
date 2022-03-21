@@ -1,18 +1,8 @@
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-
-import ReactGA from "react-ga";
-ReactGA.initialize("UA-223069772-1", { debug: true });
+import { sendGAEvent } from "../utilities/utils";
 
 const Home = () => {
-  function handleClickTest1(label) {
-    ReactGA.event({
-      category: "Button Test",
-      action: "Click Component",
-      label: label,
-    });
-  }
-
   return (
     <div>
       <h1 className="title-tome-page">Homepage</h1>
@@ -21,21 +11,27 @@ const Home = () => {
         <Button
           className="button-test-1"
           variant="contained"
-          onClick={() => handleClickTest1("Test 1")}
+          onClick={() =>
+            sendGAEvent("Button Test", "Click Component", "Test 1")
+          }
         >
           Test 1
         </Button>
         <Button
           className="button-test-2"
           variant="contained"
-          onClick={() => handleClickTest1("Test 2")}
+          onClick={() =>
+            sendGAEvent("Button Test", "Click Component", "Test 2")
+          }
         >
           Test 2
         </Button>
         <Button
           className="button-test-3"
           variant="contained"
-          onClick={() => handleClickTest1("Test 3")}
+          onClick={() =>
+            sendGAEvent("Button Test", "Click Component", "Test 3")
+          }
         >
           Test 3
         </Button>
